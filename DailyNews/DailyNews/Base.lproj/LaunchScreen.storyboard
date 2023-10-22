@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="81541-red-dots-world-map" translatesAutoresizingMaskIntoConstraints="NO" id="v2f-WS-HOw">
+                                <rect key="frame" x="0.0" y="264" width="393" height="312"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Yuq-Uw-Occ">
+                                <rect key="frame" x="61.333333333333343" y="355.33333333333331" width="270.66666666666663" height="141.33333333333331"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9ed-zj-AoW">
+                                        <rect key="frame" x="0.0" y="0.0" width="136.66666666666666" height="141.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L20-Np-2PD">
+                                                <rect key="frame" x="0.0" y="0.0" width="136.66666666666666" height="66.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="60"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11N-Gi-T5F">
+                                                <rect key="frame" x="0.0" y="74.666666666666686" width="136.66666666666666" height="66.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="60"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="worldmap" translatesAutoresizingMaskIntoConstraints="NO" id="83c-z9-plx">
+                                        <rect key="frame" x="143.66666666666666" y="0.0" width="126.99999999999997" height="141.33333333333334"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v2f-WS-HOw" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="264" id="6fv-yP-ROD"/>
+                            <constraint firstItem="v2f-WS-HOw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6z5-Fr-CWe"/>
+                            <constraint firstItem="Yuq-Uw-Occ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Lxs-nd-Sga"/>
+                            <constraint firstItem="v2f-WS-HOw" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.474178" constant="-92" id="WG6-am-h6F"/>
+                            <constraint firstItem="v2f-WS-HOw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nAk-h8-em4"/>
+                            <constraint firstItem="Yuq-Uw-Occ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="oaO-4G-HgZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="81541-red-dots-world-map" width="390" height="321"/>
+        <image name="worldmap" width="127" height="121"/>
+    </resources>
+</document>
