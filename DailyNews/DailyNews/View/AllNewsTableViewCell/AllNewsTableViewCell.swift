@@ -25,6 +25,7 @@ class AllNewsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
      
+        selectionStyle = .none
         newsTitle.setSameFont(fontSize: 19)
         newsDate.setSameFont(fontSize: 12)
         authorLabel.setSameFont(fontSize: 12)
